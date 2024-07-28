@@ -334,6 +334,34 @@ class ResConfigSettings(models.TransientModel):
         seqs = []
         return self.remove_data(to_removes, seqs)
 
+    def remove_payroll(self):
+    to_removes = [
+        'hr.contract',
+        'hr.salary.attachment',
+        'hr.contract.salary.offer',
+        'hr.work.entry',
+        'hr.payslip',
+        'hr.payslip.run',
+        'hr.work.entry.type',
+        'hr.salary.rule'
+    ]
+    return self.remove_data(to_removes)
+    
+    def remove_helpdesk(self):
+        to_removes = [
+            'helpdesk.ticket',
+            'helpdesk.sla',
+            'helpdesk.team'
+        ]
+        return self.remove_data(to_removes)
+
+    def remove_frontdesk(self):
+        to_removes = [
+            'frontdesk.visitor',
+            'frontdesk.frontdesk'
+        ]
+        return self.remove_data(to_removes)
+
     def remove_all(self):
         self.remove_website()
         self.remove_quality_setting()
@@ -347,6 +375,9 @@ class ResConfigSettings(models.TransientModel):
         self.remove_expense()
         self.remove_message()
         self.remove_account()
+        self.remove_payroll()
+        self.remove_helpdesk()
+        self.remove_frontdesk()
         # self.remove_account_chart()
         return True
 
