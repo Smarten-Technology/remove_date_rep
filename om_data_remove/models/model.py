@@ -334,7 +334,7 @@ class ResConfigSettings(models.TransientModel):
         seqs = []
         return self.remove_data(to_removes, seqs)
 
-    def remove_payroll(self):
+      def remove_payroll(self):
         to_removes = [
             'hr.contract',
             'hr.salary.attachment',
@@ -345,7 +345,7 @@ class ResConfigSettings(models.TransientModel):
             'hr.work.entry.type',
             'hr.salary.rule'
         ]
-        return self.remove_data(to_removes)
+      return self.remove_data(to_removes)
     
     def remove_helpdesk(self):
         to_removes = [
@@ -361,6 +361,36 @@ class ResConfigSettings(models.TransientModel):
             'frontdesk.frontdesk'
         ]
         return self.remove_data(to_removes)
+
+    def remove_attendance(self):
+        to_removes = [
+            'hr.attendance'
+        ]
+        seqs = []
+        return self.remove_data(to_removes, seqs)
+
+    
+    def remove_timeoff(self):
+        to_removes = [
+            'hr.leave.accrual.plan',
+            'hr.leave.allocation',
+            'hr.leave',
+            'hr.leave.type',
+            'resource.calendar.leaves',
+            'hr.leave.mandatory.day',
+            'mail.activity.type'
+        ]
+        seqs = []
+        return self.remove_data(to_removes, seqs)
+
+    def remove_knowledge(self):
+        to_removes = [
+            'knowledge.article',
+            
+        ]
+        seqs = []
+        return self.remove_data(to_removes, seqs)
+
 
     def remove_all(self):
         self.remove_website()
@@ -378,6 +408,9 @@ class ResConfigSettings(models.TransientModel):
         self.remove_payroll()
         self.remove_helpdesk()
         self.remove_frontdesk()
+        self.remove_attendance()
+        self.remove_timeoff()
+        self.remove_knowledge()
         # self.remove_account_chart()
         return True
 
