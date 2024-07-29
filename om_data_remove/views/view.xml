@@ -96,16 +96,36 @@
                         </div>
 
                         <div class="col-12 col-lg-12 mb4">
+                            <span class="col-3 col-lg-2 text-left">Payroll</span>
+                            <button string="Delete All Payroll" type="object" name="remove_payroll"
+                                    confirm="Please confirm to delete the select data?" class="oe_highlight"/>
+                        </div>
+
+                        <div class="col-12 col-lg-12 mb4">
+                            <span class="col-3 col-lg-2 text-left">Helpdesk</span>
+                            <button string="Delete All Helpdesk" type="object" name="remove_helpdesk"
+                                    confirm="Please confirm to delete the select data?" class="oe_highlight"/>
+                        </div>
+
+                        <div class="col-12 col-lg-12 mb4">
+                            <span class="col-3 col-lg-2 text-left">Frontdesk</span>
+                            <button string="Delete All Frontdesk" type="object" name="remove_frontdesk"
+                                    confirm="Please confirm to delete the select data?" class="oe_highlight"/>
+                        </div>
+                      
+                        <div class="col-12 col-lg-12 mb4">
                             <span class="col-3 col-lg-2 text-left">Attendance</span>
                             <button string="Delete All Attendance" type="object" name="remove_attendance"
                                     confirm="Please confirm to delete the select data?" class="oe_highlight"/>
-                                    
+                                   
                         </div>
+                      
                         <div class="col-12 col-lg-12 mb4">
                             <span class="col-3 col-lg-2 text-left">Time off</span>
                             <button string="Delete All Time off" type="object" name="remove_timeoff"
                                     confirm="Please confirm to delete the select data?" class="oe_highlight"/>
                         </div>
+                      
                         <div class="col-12 col-lg-12 mb4">
                             <span class="col-3 col-lg-2 text-left">Knowledge</span>
                             <button string="Delete All Knowledge" type="object" name="remove_knowledge"
