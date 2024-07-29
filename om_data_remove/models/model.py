@@ -334,7 +334,7 @@ class ResConfigSettings(models.TransientModel):
         seqs = []
         return self.remove_data(to_removes, seqs)
 
-      def remove_payroll(self):
+    def remove_payroll(self):
         to_removes = [
             'hr.contract',
             'hr.salary.attachment',
@@ -345,7 +345,7 @@ class ResConfigSettings(models.TransientModel):
             'hr.work.entry.type',
             'hr.salary.rule'
         ]
-      return self.remove_data(to_removes)
+        return self.remove_data(to_removes)
     
     def remove_helpdesk(self):
         to_removes = [
