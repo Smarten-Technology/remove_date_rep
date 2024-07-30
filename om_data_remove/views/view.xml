@@ -99,17 +99,56 @@
                             <span class="col-3 col-lg-2 text-left">Payroll</span>
                             <button string="Delete All Payroll" type="object" name="remove_payroll"
                                     confirm="Please confirm to delete the select data?" class="oe_highlight"/>
+                            |
+                            <button string="Delete All Payslip Line" type="object" name="remove_payslip_line"
+                                    confirm="Please confirm to delete the select data?" class="oe_highlight"/>
+                            |
+                            <button string="Delete All Contract" type="object" name="remove_contract"
+                                    confirm="Please confirm to delete the select data?" class="oe_highlight"/>
+                            |
+                            <button string="Delete All Salary Attachment" type="object" name="remove_salary_attachment"
+                                    confirm="Please confirm to delete the select data?" class="oe_highlight"/>
+                            |
+                            <button string="Delete All Contract Salary Offer" type="object" name="remove_contract_salary_offer"
+                                    confirm="Please confirm to delete the select data?" class="oe_highlight"/>
+                            |
+                            <button string="Delete All Work Entry" type="object" name="remove_work_entry"
+                                    confirm="Please confirm to delete the select data?" class="oe_highlight"/>
+                            |
+                            <button string="Delete All Payslip Run" type="object" name="remove_payslip_run"
+                                confirm="Please confirm to delete the select data?" class="oe_highlight"/>
+                            |
+                            <button string="Delete All Payroll Structure" type="object" name="remove_payroll_structure"
+                                confirm="Please confirm to delete the select data?" class="oe_highlight"/>
+                            |
+                            <button string="Delete All Payroll Structure Type" type="object" name="remove_payroll_structure_type"
+                                confirm="Please confirm to delete the select data?" class="oe_highlight"/>
+                            |
+                            <button string="Delete All Work Entry Type" type="object" name="remove_work_entry_type"
+                                confirm="Please confirm to delete the select data?" class="oe_highlight"/>
+                            |
+                            <button string="Delete All Salary Rule" type="object" name="remove_salary_rule"
+                                confirm="Please confirm to delete the select data?" class="oe_highlight"/>
                         </div>
 
                         <div class="col-12 col-lg-12 mb4">
                             <span class="col-3 col-lg-2 text-left">Helpdesk</span>
                             <button string="Delete All Helpdesk" type="object" name="remove_helpdesk"
                                     confirm="Please confirm to delete the select data?" class="oe_highlight"/>
+                            |
+                            <button string="Delete All Tickets" type="object" name="remove_helpdesk_ticket"
+                                    confirm="Please confirm to delete the select data?" class="oe_highlight"/>
+                            |
+                            <button string="Delete All SLA" type="object" name="remove_helpdesk_sla"
+                                    confirm="Please confirm to delete the select data?" class="oe_highlight"/>
                         </div>
 
                         <div class="col-12 col-lg-12 mb4">
                             <span class="col-3 col-lg-2 text-left">Frontdesk</span>
                             <button string="Delete All Frontdesk" type="object" name="remove_frontdesk"
+                                    confirm="Please confirm to delete the select data?" class="oe_highlight"/>
+                            |
+                            <button string="Delete All Visitors" type="object" name="remove_frontdesk_visitor"
                                     confirm="Please confirm to delete the select data?" class="oe_highlight"/>
                         </div>
                       
@@ -124,6 +163,30 @@
                             <span class="col-3 col-lg-2 text-left">Time off</span>
                             <button string="Delete All Time off" type="object" name="remove_timeoff"
                                     confirm="Please confirm to delete the select data?" class="oe_highlight"/>
+                            |
+                            <button string="Delete All Leave Accrual Plan" type="object" name="remove_leave_accural_plan"
+                                    confirm="Please confirm to delete the select data?" class="oe_highlight"/>
+                            |
+                            <button string="Delete All Leave Allocation" type="object" name="remove_leave_allocation"
+                                confirm="Please confirm to delete the select data?" class="oe_highlight"/>
+                            |
+                            <button string="Delete All Leave Type" type="object" name="remove_leave_type"
+                                confirm="Please confirm to delete the select data?" class="oe_highlight"/>
+                            |
+                            <button string="Delete All Resource Calendar Leaves" type="object" name="remove_resource_calendar_leaves"
+                                confirm="Please confirm to delete the select data?" class="oe_highlight"/>
+                            |
+                            <button string="Delete All Leave Mandatory Day" type="object" name="remove_leave_mandatory_day"
+                                confirm="Please confirm to delete the select data?" class="oe_highlight"/>
+                            |
+                            <button string="Delete All Mail Activity" type="object" name="remove_mail_activity"
+                                confirm="Please confirm to delete the select data?" class="oe_highlight"/>
+                            |
+                            <button string="Delete All Mail Activity Plan Template" type="object" name="remove_mail_activity_plan_template"
+                                confirm="Please confirm to delete the select data?" class="oe_highlight"/>
+                            |
+                            <button string="Delete All Mail Activity Type" type="object" name="remove_mail_activity_type"
+                                confirm="Please confirm to delete the select data?" class="oe_highlight"/>
                         </div>
                       
                         <div class="col-12 col-lg-12 mb4">
