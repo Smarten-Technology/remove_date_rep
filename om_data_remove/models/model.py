@@ -334,16 +334,118 @@ class ResConfigSettings(models.TransientModel):
         seqs = []
         return self.remove_data(to_removes, seqs)
 
+    def remove_payslip_line(self):
+        to_removes = [
+            'hr.payslip.line'
+        ]
+        return self.remove_data(to_removes)
+
+    def remove_contract(self):
+        to_removes = [
+            'hr.payslip.line',
+            'hr.work.entry',
+            'hr.contract'
+        ]
+        return self.remove_data(to_removes)
+
+    def remove_salary_attachment(self):
+        to_removes = [
+            'hr.salary.attachment'
+        ]
+        return self.remove_data(to_removes)        
+
+    def remove_contract_salary_offer(self):
+        to_removes = [
+            'hr.contract.salary.offer'
+        ]
+        return self.remove_data(to_removes)
+
+    def remove_work_entry(self):
+        to_removes = [
+            'hr.work.entry'
+        ]
+        return self.remove_data(to_removes)
+    
+    def remove_payslip(self):
+        to_removes = [
+            'hr.payslip'
+        ]
+        return self.remove_data(to_removes)
+    
+    def remove_payslip_run(self):
+        to_removes = [
+            'hr.payslip.run'
+        ]
+        return self.remove_data(to_removes)
+
+    def remove_payroll_structure(self):
+        to_removes = [
+            'hr.salary.rule',
+            'hr.payroll.structure'
+        ]
+        return self.remove_data(to_removes)
+
+    def remove_payroll_structure_type(self):
+        to_removes = [
+            'hr.salary.rule',
+            'hr.payroll.structure',
+            'hr.payroll.structure.type'
+        ]
+        return self.remove_data(to_removes)
+
+    def remove_payslip_worked_days(self):
+        to_removes = [
+            'hr.payslip.worked_days'
+        ]
+        return self.remove_data(to_removes)
+
+    def remove_work_entry_type(self):
+        to_removes = [
+            'hr.payslip.worked_days',
+            'hr.payslip.line',
+            'hr.salary.rule',
+            'hr.payroll.structure',
+            'hr.payroll.structure.type',
+            'hr.work.entry.type'
+        ]
+        return self.remove_data(to_removes)
+
+    def remove_salary_rule(self):
+        to_removes = [
+            'hr.payslip.line',
+            'hr.salary.rule'
+        ]
+        return self.remove_data(to_removes)
+
     def remove_payroll(self):
         to_removes = [
+            'hr.payslip.worked_days',
+            'hr.work.entry',
+            'hr.payslip.line',
             'hr.contract',
             'hr.salary.attachment',
             'hr.contract.salary.offer',
-            'hr.work.entry',
             'hr.payslip',
             'hr.payslip.run',
-            'hr.work.entry.type',
-            'hr.salary.rule'
+            'hr.salary.rule',
+            'hr.payroll.structure',
+            'hr.payroll.structure.type',
+            'hr.work.entry.type'
+        ]
+        return self.remove_data(to_removes)
+
+    def remove_helpdesk_ticket(self):
+        to_removes = [
+            'helpdesk.ticket'
+        ]
+        seqs = [
+            'helpdesk.ticket'
+        ]      
+        return self.remove_data(to_removes, seqs)
+
+    def remove_helpdesk_sla(self):
+        to_removes = [
+            'helpdesk.sla'
         ]
         return self.remove_data(to_removes)
     
@@ -352,6 +454,15 @@ class ResConfigSettings(models.TransientModel):
             'helpdesk.ticket',
             'helpdesk.sla',
             'helpdesk.team'
+        ]
+        seqs = [
+            'helpdesk.ticket'
+        ] 
+        return self.remove_data(to_removes, seqs)
+
+    def remove_frontdesk_visitor(self):
+        to_removes = [
+            'frontdesk.visitor'
         ]
         return self.remove_data(to_removes)
 
@@ -369,7 +480,56 @@ class ResConfigSettings(models.TransientModel):
         seqs = []
         return self.remove_data(to_removes, seqs)
 
+    def remove_leave_accural_plan(self):
+        to_removes = [
+            'hr.leave.accrual.plan'
+        ]
+        return self.remove_data(to_removes)
     
+    def remove_leave_allocation(self):
+        to_removes = [
+            'hr.leave.allocation'
+        ]
+        return self.remove_data(to_removes)
+
+    def remove_leave_type(self):
+        to_removes = [
+            'hr.leave',
+            'hr.leave.allocation',
+            'hr.leave.type',
+        ]
+        return self.remove_data(to_removes)
+
+    def remove_resource_calendar_leaves(self):
+        to_removes = [
+            'resource.calendar.leaves'
+        ]
+        return self.remove_data(to_removes)
+
+    def remove_leave_mandatory_day(self):
+        to_removes = [
+            'hr.leave.mandatory.day'
+        ]
+        return self.remove_data(to_removes)
+
+    def remove_mail_activity(self):
+        to_removes = [
+            'mail.activity'
+        ]
+        return self.remove_data(to_removes)
+
+    def remove_mail_activity_plan_template(self):
+        to_removes = [
+            'mail.activity.plan.template'
+        ]
+        return self.remove_data(to_removes)
+
+    def remove_mail_activity_type(self):
+        to_removes = [
+            'mail.activity.type'
+        ]
+        return self.remove_data(to_removes)
+
     def remove_timeoff(self):
         to_removes = [
             'hr.leave.accrual.plan',
@@ -378,6 +538,8 @@ class ResConfigSettings(models.TransientModel):
             'hr.leave.type',
             'resource.calendar.leaves',
             'hr.leave.mandatory.day',
+            'mail.activity',
+            'mail.activity.plan.template',
             'mail.activity.type'
         ]
         seqs = []
