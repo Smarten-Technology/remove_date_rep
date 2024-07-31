@@ -393,11 +393,17 @@ class ResConfigSettings(models.TransientModel):
         ]
         return self.remove_data(to_removes)
 
+    def remove_payslip_worked_days(self):
+        to_removes = [
+            'hr.payslip.worked_days'
+        ]
+        return self.remove_data(to_removes)
+
     def remove_work_entry_type(self):
         to_removes = [
+            'hr.payslip.worked_days',
             'hr.payslip.line',
             'hr.salary.rule',
-            'hr.payslip.worked.days',
             'hr.payroll.structure',
             'hr.payroll.structure.type',
             'hr.work.entry.type'
@@ -413,6 +419,7 @@ class ResConfigSettings(models.TransientModel):
 
     def remove_payroll(self):
         to_removes = [
+            'hr.payslip.worked_days',
             'hr.work.entry',
             'hr.payslip.line',
             'hr.contract',
