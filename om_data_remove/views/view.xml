@@ -124,6 +124,9 @@
                             <button string="Delete All Payroll Structure Type" type="object" name="remove_payroll_structure_type"
                                 confirm="Please confirm to delete the select data?" class="oe_highlight"/>
                             |
+                            <button string="Delete All Payslip Worked Days" type="object" name="remove_payslip_worked_days"
+                                confirm="Please confirm to delete the select data?" class="oe_highlight"/>
+                            |
                             <button string="Delete All Work Entry Type" type="object" name="remove_work_entry_type"
                                 confirm="Please confirm to delete the select data?" class="oe_highlight"/>
                             |
